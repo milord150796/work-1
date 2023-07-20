@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектори та специфічність CSS</title>
+    <style>
+    /* Стилізація по типу елемента */
+    p {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Стилізація по класу */
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    /* Стилізація по ID */
+    #example {
+        text-decoration: underline;
+    }
+
+    /* Стилізація по атрибуту */
+    .highlight {
+        background-color: yellow;
+    }
+
+    /* Стилізація за допомогою дочірнього селектора */
+    section > h2 {
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 class="main-heading">Селектори та специфічність CSS</h1>
+</header>
+<main>
+    <section>
+        <h2 id="example">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolorum!</h2>
+        <p>Це приклад тексту, <span class="highlight">виділеного</span> за допомогою CSS.<span class="highlight">ROBOTA</span></p>
+    </section>
+</main>
+</body>
+</html>
