@@ -28,7 +28,7 @@ footer {
 }
 .block{
     width: 100%;
-    background-color: green;
+    background-color: rgb(21, 255, 0);
     margin: 15px;
 }
 .header{
@@ -38,7 +38,10 @@ footer {
     height: 45px;
 }
 .selection-block{
-    width: 100%;
+    width: 90%;
+}
+h2 {
+    font-size: 2rem;
 }
 
 /* Стилі для екранів менше 600 пікселів */
@@ -48,9 +51,9 @@ footer {
     }
     
     section h2 {
-        font-size: 1.4rem;
-        color: crimson;
+        font-size: 1.1rem;
     }
+       
     section h3{
         font-size: 1.1rem;
         color: red;
@@ -70,6 +73,9 @@ footer {
     .block{
         background-color: goldenrod;
     }
+   .block h2 {
+    font-size: 1.5rem;
+   }
     .header{
         width: 100%;
         background-color: yellow;
@@ -81,14 +87,15 @@ footer {
         display: flex;
         flex-direction: column-reverse;
     }
+    
+
 }
 
 /* Стилі для екранів більше 600 пікселів */
 @media (min-width: 601px) {
     header h1 {
         font-size: 2.2rem;
-    }
-    
+    }   
     section h2 {
         font-size: 1.9rem;
     }
@@ -108,5 +115,8 @@ footer {
         font-size: 2.2rem;
         color: chartreuse;
     }
+    section p {
+        font-size: 1.9rem;
+        color: blue;
+    }
 }
-
