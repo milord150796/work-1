@@ -8,26 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
-      </ol>
-    </nav>
-    <!-- Example split danger button -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-danger">Action</button>
-      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-        <span class="visually-hidden">Toggle Dropdown</span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
+    <header>
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+  </header>
     <!-- Контейнер для вмісту -->
     <div class="container">
         <!-- Рядок з двома стовпцями -->
@@ -69,10 +65,22 @@
       </div>
     </div>
   </div>
+  <nav>
+    <ul class="list-group">
+      <li class="list-group-item">A simple default list group item</li>
+      <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+      <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+      <li class="list-group-item list-group-item-success">A simple success list group item</li>
+      <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+      <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+      <li class="list-group-item list-group-item-info">A simple info list group item</li>
+      <li class="list-group-item list-group-item-light">A simple light list group item</li>
+      <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+    </ul>
+  </nav>
 
   <div class="alert alert-primary" role="alert">
     A simple primary alert—check it out!
   </div>
-  
   </body>
 </html>
