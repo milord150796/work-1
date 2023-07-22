@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
-
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+    <!-- Example split danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Action</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
     <!-- Контейнер для вмісту -->
     <div class="container">
         <!-- Рядок з двома стовпцями -->
@@ -28,11 +47,12 @@
     <!--bootsrap-->
      <div class="container">
     <div class="row">
-      
       <div class="col-md-6">
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aliquam dolor! Vel atque obcaecati maiores explicabo fugiat nobis laudantium, quia, incidunt culpa quam cupiditate hic, dolorum aliquid vitae beatae rem.</h2>
         <!-- Кнопка Bootstrap -->
-        <button type="button" class="btn btn-primary" >Натисніть мене</button>
+        <button type="button" class="btn btn-primary">
+          Натисніть мене <span class="badge text-bg-secondary">+99</span>
+        </button>
       </div>
       <div class="col-md-6">
         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus velit, perferendis, doloremque explicabo cupiditate necessitatibus eveniet, voluptatibus sequi eos repellat recusandae vero illum rerum animi aspernatur ipsa pariatur. Aperiam, temporibus.</h2>
@@ -48,6 +68,10 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
   </div>
   
   </body>
