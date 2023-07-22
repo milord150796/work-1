@@ -37,6 +37,9 @@ footer {
     border: 3px solid red;
     height: 45px;
 }
+.selection-block{
+    width: 100%;
+}
 
 /* Стилі для екранів менше 600 пікселів */
 @media (max-width: 600px) {
@@ -72,6 +75,11 @@ footer {
         background-color: yellow;
         border: 1px solid red;
         height: 20px;
+    }
+    .selection-block{
+        width: 70%;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
