@@ -8,11 +8,19 @@
     /* Стилізація по типу елемента */
     p {
         font-family: Arial, sans-serif;
+        font-size: 1.1rem;
+        color: darkgreen;
     }
 
     /* Стилізація по класу */
     .main-heading {
         font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: chartreuse;
+        width: 50%;
+        margin-left: 25%;
     }
 
     /* Стилізація по ID */
@@ -23,11 +31,63 @@
     /* Стилізація по атрибуту */
     .highlight {
         background-color: yellow;
+        font-size: 1rem;
+        text-decoration: line-through;
     }
 
     /* Стилізація за допомогою дочірнього селектора */
     section > h2 {
         color: blue;
+    }
+    .section-block{
+        background-color: aqua;
+        display: flex;
+    }
+    .block-main{
+        display: flex;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-content p {
+        margin: 0;
+    }
+
+    .social-icons {
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+
+    .social-icons li {
+        margin: 0 5px;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+    }
+
+    .social-icons a:hover {
+        background-color: #555;
+    }
+    .paragraf{
+        margin-left: 20px;
+        margin-top:21px;
+    }
+    .photo{
+        display: flex;
+        align-items: center;
     }
     </style>
 </head>
@@ -36,10 +96,41 @@
     <h1 class="main-heading">Селектори та специфічність CSS</h1>
 </header>
 <main>
-    <section>
+    <section class="section-block">
         <h2 id="example">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolorum!</h2>
-        <p>Це приклад тексту, <span class="highlight">виділеного</span> за допомогою CSS.<span class="highlight">ROBOTA</span></p>
+        <p class="paragraf">Це приклад тексту, <span class="highlight">виділеного</span> за допомогою CSS.<span class="highlight">ROBOTA</span></p>
     </section>
+    <main class="block-main"> 
+        <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="highlight"> A aut enim perferendis iste quo! Dolorum odio incidunt vel iure, eum magni dicta ratione facere voluptatibus accusamus consectetur doloribus ipsa hic cupiditate libero reprehenderit fugit eaque optio nihil. Autem quam, aut, veniam enim ad impedit debitis quibusdam amet ex dignissimos ullam. Maxime repellat aspernatur vitae, dolor quasi at hic vel ducimus quas laboriosam quo! Iure delectus, placeat ut iusto alias amet recusandae, iste molestiae totam tempore fugit vero. Rem numquam expedita inventore animi ex consectetur blanditiis consequatur porro a nesciunt? Assumenda facilis ducimus facere ullam quisquam, sapiente voluptatibus magnam quas quasi deleniti voluptatum deserunt debitis vero ratione perspiciatis! Iure ad aut ipsum voluptates odit voluptate eligendi laborum, expedita obcaecati, cum dolore illum consequuntur delectus? Esse delectus voluptate quaerat autem cum voluptatibus totam mollitia vero doloremque sed saepe aperiam nulla quibusdam, omnis dolorum necessitatibus? Natus unde aliquam, asperiores tenetur, eum fugiat quod quisquam deserunt sunt maxime odit omnis nisi magnam, vel saepe libero est.</span> Debitis eius vitae, similique quod fugit tempora sint corporis exercitationem dignissimos fuga atque deleniti quibusdam, cupiditate dolores beatae explicabo ratione id cum iure quas! Voluptatibus distinctio, mollitia nemo tempore perspiciatis, facere omnis sed nam, vero earum explicabo odio.
+        </h2>
+        <p class="paragraf-centr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit.<b> Libero illo dolore optio, omnis nesciunt officiis, iste officia ab ratione iusto eius distinctio velit vel dolor nulla cupiditate corporis delectus facere quos consequatur illum, rerum amet aliquam. Aspernatur eveniet voluptatum accusantium sit quis fuga, ab eaque. Iste architecto, minus molestias deserunt mollitia deleniti repudiandae omnis eaque quasi odio quaerat dolore sit minima officiis id tenetur. Itaque cupiditate doloremque nulla, vel magni voluptatibus facere ipsam, sunt adipisci excepturi eius beatae dolorum necessitatibus ullam architecto voluptas perferendis explicabo atque exercitationem. Quam fugit ex tempore enim expedita, ipsam porro adipisci asperiores soluta maxime, iusto odit consequatur earum aliquam molestiae! Nulla natus corporis at obcaecati iusto iste recusandae, illo sit perspiciatis, facere, sint quod ratione repellat! Fuga ducimus excepturi quibusdam maiores. Eos dolor perspiciatis itaque doloremque neque labore quisquam molestiae incidunt. Eum, autem? Unde quis alias eos eum ipsam reprehenderit excepturi temporibus? Pariatur aspernatur optio sed earum dicta sint reprehenderit amet, aliquid minima a id eaque mollitia, eveniet dolor excepturi facere corporis facilis commodi, vero quidem quisquam. Unde impedit id doloremque ducimus iste atque rem, aperiam fuga necessitatibus explicabo qui ea ratione obcaecati error accusamus laboriosam vitae similique minus reiciendis est eveniet! </b>Nulla minima repudiandae asperiores recusandae voluptatibus distinctio! Sequi, doloribus suscipit corrupti neque ratione veritatis expedita fuga laborum rem quos, odit deserunt iste! Esse, dicta ipsam facilis ea tempora molestiae accusamus, vitae assumenda ullam error doloribus id illo iste recusandae dolor, voluptatem rem asperiores repellendus dolore est sed cupiditate reiciendis enim. Eos, fuga vitae.
+        </p>
+        <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum vero eum eaque ipsum ullam iure dicta vitae aperiam provident temporibus ex sunt error laboriosam eos facilis aliquam pariatur consectetur, deserunt quas repudiandae quo quis? Hic non aperiam blanditiis beatae? Quod nisi numquam amet et veniam, ratione tempora harum illo officiis esse, pariatur deleniti vero eum a exercitationem, nesciunt velit corrupti perspiciatis incidunt molestiae provident eaque totam? Veniam eos laborum magnam ad culpa numquam laudantium in debitis reiciendis. Minus laboriosam optio beatae facilis quaerat quae saepe voluptas non dolorum ratione itaque maiores assumenda nesciunt consectetur repudiandae ab, corrupti voluptates perspiciatis! Ullam, repellendus dicta. Cumque ex sit ut animi obcaecati qui eos rem officia aliquam, libero debitis tempore unde, quae soluta aliquid id eum totam veritatis architecto consequatur fuga alias! Dicta tempore deserunt maxime, amet, labore eaque omnis praesentium accusamus hic facilis alias non obcaecati, temporibus autem sequi natus? Quos, nihil dolore autem provident asperiores consequuntur, natus officia sapiente eveniet voluptates dolorum accusantium modi voluptatibus vero molestias praesentium pariatur repellendus est quasi necessitatibus architecto. Harum magnam cupiditate atque aspernatur quo molestiae libero facilis beatae laudantium est ullam nesciunt vel voluptatibus saepe amet cum quidem, quos iure. Alias harum provident dolorum? Perferendis, perspiciatis nam exercitationem dignissimos dolores accusantium harum vel dicta explicabo quod repellat nesciunt soluta sint, rerum optio, ipsa eos in illo nihil inventore ducimus repellendus earum? Velit distinctio sed consequatur rerum quia deleniti delectus, sapiente rem ad, nemo alias nobis voluptatem nihil! Placeat eaque in dolor fugiat quis pariatur deserunt nesciunt.
+        </h2>
+
+    </main>
 </main>
+<div class="photo">
+    <h2>Котики - це чарівні та ніжні створіння, які завойовують наше серце своєю грацією та привабливістю. Ці пухнасті комочки радості вміють підкорити будь-кого своїм виразним поглядом і милозвучним муркотом.
+        Кожен котик - це унікальна особистість із своїми звичками та примхами. Вони можуть бути лінивими кусачками, які бездоганно вміють розслабитися та просто лежати на сонці, насолоджуючись життям. Або ж гіперактивними гончариками, які з кажанською спритністю перескакують від полки до полки, завжди у пошуках нових пригод.
+        Їх незалежна натура та граціозність вражають. Котики завжди підкажуть, коли їм потрібна увага, прийдуть помуркотіти на вухо і ніжно витеруться об господаря. Вони розуміють наші емоції і здатні заспокоїти навіть найтривожніше серце.
+        Коти - це ідеальні компаньйони, особливо для одиноких людей. Вони завжди поруч, готові підтримати та пожартувати. Їх присутність здатна зняти стрес та покращити настрій. Взаємодія з ними розкриває наші почуття, допомагаючи створити неперевершений зв'язок між людиною та твариною.
+        А коли вони вирішують розважити нас своїми невловимими жартами, то гарантовано здатні викликати посмішку навіть у найдепресивніші моменти.
+        Тому не дивно, що котики завойовують своїм харизматичним характером серця мільйонів людей по всьому світу. Вони стають членами родини та найкращими друзями, здатними зігріти наше серце своєю безумовною любов'ю та вірністю.</h2>
+    <img src="../1_2/img/depositphotos_207119106-stock-photo-small-red-kitten-on-a.jpg" alt="котик" width="500px" >
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Мій чудовий сайт. Всі права захищені.</p>
+        <ul class="social-icons">
+            <li><a href="https://uk-ua.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Duk" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
