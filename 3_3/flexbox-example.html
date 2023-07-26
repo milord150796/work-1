@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+  body{
+    background-color: aqua;
+  }
+    .main{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }    
+    .conteiner{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 10px; 
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .main1{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: flex-start;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .conteiner1{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 90px  10px 0px; 
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+  .main2{    
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .conteiner2{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 90px  10px 0px; 
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .main4{
+      display: flex;
+     justify-content: space-between;
+    }
+    .clock-container {
+      width: 80%;
+      position: relative;
+    }
+    
+    .clock-arrow {
+      width: 15px;
+      height: 450px;
+      background-color: blue;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: center bottom;
+      animation: rotateClockwise 5s linear infinite;
+    }
+    .clock-arrow1 {
+      width: 15px;
+      height: 250px;
+      background-color: green;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: center bottom;
+      animation: rotateClockwise 120s linear infinite;
+    }
+    
+    @keyframes rotateClockwise {
+      0% {
+        transform: translate(-50%, -100%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -100%) rotate(360deg);
+      }
+    }
+      
+  </style>
+</head>
+  <body>
+    <div class="main">
+        <div class="conteiner">block 1</div>
+        <div class="conteiner">block 2</div>
+        <div class="conteiner">block 3</div>
+        <div class="conteiner">block 4</div>
+        <div class="conteiner">block 5</div>
+        <div class="conteiner">block 6</div>
+    </div>
+
+    <div class="main4">
+      <div class="main1">
+        <div class="conteiner1">block 19</div>
+        <div class="conteiner1">block 20</div>
+        <div class="conteiner1">block 21</div>
+        <div class="conteiner1">block 22</div>
+        <div class="conteiner1">block 23</div>
+        <div class="conteiner1">block 24</div>        
+    </div>
+
+    <div class="clock-container">
+      <div class="clock-arrow"></div>
+      <div class="clock-arrow1"></div>
+    </div>
+
+    <div class="main1">
+      <div class="conteiner1">block 7</div>
+      <div class="conteiner1">block 8</div>
+      <div class="conteiner1">block 9</div>
+      <div class="conteiner1">block 10</div>
+      <div class="conteiner1">block 11</div>
+      <div class="conteiner1">block 12</div>
+  </div>
+    </div>
+    <div class="main2">
+        <div class="conteiner2">block 13</div>
+        <div class="conteiner2">block 14</div>
+        <div class="conteiner2">block 15</div>
+        <div class="conteiner2">block 16</div>
+        <div class="conteiner2">block 17</div>
+        <div class="conteiner2">block 18</div>
+    </div>
+  </body>
+</html>
