@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header" "nav main" "footer footer";
+  grid-gap: 10px;
+}
+header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+nav {
+  grid-area: nav;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+aside {
+  grid-area: aside;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.conteiner{
+    display: grid;
+    background-color: wheat;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header div" "main main" "nav footer";
+    grid-gap: 10px;
+}
+.item{
+  padding: 20px;
+  background-color: blue;
+  border: 3px solid red;
+  color: white;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>Header</header>
+      <nav>Sidebar</nav>
+      <main>Main Content</main>
+      <aside>Aside Content</aside>
+      <footer>Footer</footer>
+    </div>
+    <br>
+
+    <div class="conteiner">
+      <header>Header</header>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique dicta illum rem aliquid recusandae, eius quo libero culpa eligendi distinctio. Laborum dicta nobis corrupti in ipsam saepe perspiciatis placeat.</div>
+      <nav>Sidebar</nav>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium.</aside>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      <main>Main Content</main>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde similique adipisci numquam totam. Eligendi quaerat optio unde odit minima aperiam.</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
+
