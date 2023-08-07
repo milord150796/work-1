@@ -67,3 +67,53 @@ footer {
 .text-centr{
   text-align: center;
 }
+@media screen and (max-width: 800px){
+  .block{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  section {
+    display: flex;
+    flex-direction: column;  
+  }
+  section article {
+    width: 100%;
+    padding: 2px;
+  }
+  header {
+    padding: 2px;
+  } 
+}
+@media (min-width: 801px) and (max-width:1250px) {
+  .block{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  section {
+    display: flex;
+    flex-direction: column;  
+  }
+  section article {
+    width: 100%;
+    padding: 2px;
+  }
+  header {
+    padding: 2px;
+  }  
+}
