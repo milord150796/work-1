@@ -3,6 +3,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -67,16 +68,70 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.conteiner{
+  width: 100%;
+}
 
 .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
+    -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .text-centr {
   text-align: center;
+}
+@media screen and (max-width: 800px){
+  .block{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  section {
+    display: flex;
+    flex-direction: column;  
+  }
+  section article {
+    width: 100%;
+    padding: 2px;
+  }
+  header {
+    padding: 2px;
+  } 
+}
+@media (min-width: 801px) and (max-width:1250px) {
+  .block{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    justify-content: center; 
+  }
+  section {
+    display: flex;
+    flex-direction: column;  
+  }
+  section article {
+    width: 100%;
+    padding: 2px;
+  }
+  header {
+    padding: 2px;
+  }  
 }
